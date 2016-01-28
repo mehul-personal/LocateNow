@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txvLocationName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Location Name"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imvShareLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="1.8"
+            android:background="@null" android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share_share"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imvViewLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="1.8"
+            android:background="@null" android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share_view"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imvUpdateLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="1.8"
+            android:background="@null" android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share_edit"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imvDeleteLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_weight="1.8"
+            android:background="@null" android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share_delete"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

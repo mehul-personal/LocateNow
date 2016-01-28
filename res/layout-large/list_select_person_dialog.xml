@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <TextView
+        android:id="@+id/txvSelectPerson"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f3f4f6"
+        android:gravity="center"
+        android:text="@string/str_select_person"
+        android:textColor="#5a5856"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dddfdf" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_gray_roundcorner_style"
+        android:drawableRight="@drawable/ic_address_search"
+        android:ems="10" android:textColor="#0ea299"
+android:popupBackground="#0ea299"
+        android:hint="@string/str_search_user"
+        android:paddingLeft="5dp" android:textSize="25sp"
+        android:paddingRight="5dp"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lsvItemDialog"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:divider="#dddfdf"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnShareLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/set_share_location_border"
+                android:text="@string/str_share_location"
+                android:textAllCaps="false"
+                android:textColor="#4f4c4d"
+                android:textSize="30sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnShareViaOtherApps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/set_share_via_other_apps"
+                android:text="@string/str_share_via_other_app"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

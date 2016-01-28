@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/ic_chat_bg" >
+
+        <ListView
+            android:id="@+id/lsvChatList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/transparent" android:layout_marginBottom="10dp"
+            android:stackFromBottom="true" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#384248"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtCommentBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_chat_white_roundcorner_style"
+            android:cursorVisible="true"
+            android:hint="@string/str_message_type_here"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" android:textSize="32sp"
+            android:textColor="#6e6d6d" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!--
+ <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="AIzaSyDex0FGN9Oczfl-_XwUGNnBh_tKKbjgDcQ"
+        android:clickable="true" />
+    -->
+
+    <Button
+        android:id="@+id/btnMarkerInfoWindow"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center" android:paddingBottom="10dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/ic_marker_info_windo"
+        android:gravity="center"
+        android:text="@string/str_set_location"
+        android:textAllCaps="false"
+        android:textColor="#5e6766"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/marker_sign"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@null"
+        android:src="@drawable/ic_map_marker" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txvCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_large_box"
+        android:drawableRight="@drawable/ic_address_search"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp" >
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/btnLocationSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/set_location_submit_button"
+        android:text="@string/str_submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="38sp" />
+
+    <ImageButton
+        android:id="@+id/imbMapSetLocationType"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="150dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_map_type" />
+
+</FrameLayout>

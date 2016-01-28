@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f3f4f6"
+        android:gravity="center"
+        android:text="@string/str_map_type"
+        android:textColor="#5a5856"
+        android:textSize="32sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#dddfdf" />
+
+    <ListView
+        android:id="@+id/lsvItemDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#dddfdf"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+</LinearLayout>

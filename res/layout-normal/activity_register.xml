@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_image"
+    android:orientation="vertical" >
+
+    
+    <ImageView
+        android:id="@+id/imvUploadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:src="@drawable/no_image_profile" />
+    
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_white_roundcorner_style"
+        android:drawableLeft="@drawable/ic_user_phone"
+        android:drawablePadding="15dp"
+        android:hint="@string/str_username" android:textCursorDrawable="@null" 
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_white_roundcorner_style"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="15dp" android:textCursorDrawable="@null" 
+        android:hint="@string/str_email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@drawable/edittext_white_roundcorner_style"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="5dp"
+            android:hint="@string/str_countrycode"
+            android:inputType="number" android:textCursorDrawable="@null" 
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_white_roundcorner_style"
+           android:textCursorDrawable="@null" 
+            android:drawablePadding="15dp"
+            android:hint="@string/str_phone"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" android:textCursorDrawable="@null" 
+        android:background="@drawable/edittext_white_roundcorner_style"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/str_password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_white_roundcorner_style"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="15dp" android:textCursorDrawable="@null" 
+        android:hint="@string/str_confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_roundcorner_style"
+        android:gravity="center"
+        android:text="@string/str_sign_up"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_left_line" />
+
+        <TextView
+            android:id="@+id/txvLocateHeading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/str_cap_locatenow"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_right_line" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llShareLocationRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:background="#ffffff"
+     >
+
+    <TextView
+        android:id="@+id/txvShareLocationDescription"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:text="gfdsgdf" android:textSize="22sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4f4c4d" />
+
+    <ImageButton
+        android:id="@+id/imbShareLocationDelete"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="6"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_green_delete" />
+
+</LinearLayout>
